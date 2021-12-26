@@ -1,0 +1,4 @@
+stopwords
+vader_lexicon
+twitter_samples
+subjectivity

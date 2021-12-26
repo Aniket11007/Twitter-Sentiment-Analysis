@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+	<div class="disp">
+		<p class="resname"><b>Results for the username: {{username}}</b></p>
+		<div class="res">
+				<ul style="list-style-type:circle;">
+					{% for i,j in newl %}
+						<li style="padding-bottom: 1em;">{{ i }} : {{ j }}</li>
+					{% endfor %}
+				</ul>
+			
+		</div>
+	</div>
+</body>
+</html>
